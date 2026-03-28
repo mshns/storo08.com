@@ -1,0 +1,279 @@
+:root {
+  --primary-color: rgb(221, 109, 0);
+  --secondary-color: rgb(68, 68, 68);
+  --highlight-color: rgb(0, 217, 255);
+  --primary-text-color: rgb(255, 255, 255);
+  --secondary-text-color: rgb(255, 255, 255, 0.9);
+  --success-color: rgb(0, 128, 0);
+  --error-color: rgb(235, 34, 39);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Play", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.frame {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+
+  background: linear-gradient(
+    45deg,
+    var(--highlight-color),
+    var(--secondary-color),
+    black
+  );
+  background-size: 400% 400%;
+
+  clip-path: polygon(
+    1453px 0,
+    0 0,
+    0 56px,
+    1447px 56px,
+    1447px 1080px,
+    1920px 1080px,
+
+    1920px 668px,
+    1453px 668px,
+    1453px 618px,
+    1920px 618px,
+    1920px 668px,
+
+    1920px 612px,
+    1453px 612px,
+    1453px 562px,
+    1920px 562px,
+    1920px 612px,
+
+    1920px 556px,
+    1453px 556px,
+    1453px 356px,
+    1920px 356px,
+    1920px 556px,
+
+    1920px 350px,
+    1453px 350px
+  );
+
+  animation: gradient 10s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  position: absolute;
+  width: 1427px;
+  height: 36px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title {
+  padding: 0 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  background-color: var(--primary-color);
+  transform: skew(-10deg);
+  white-space: nowrap;
+}
+
+.subtitle-list {
+  position: relative;
+  height: 36px;
+  padding: 10px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  color: var(--primary-text-color);
+  background-color: var(--secondary-color);
+  transform: skew(-10deg);
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0; /* Начальное состояние */
+}
+
+.subtitle-list::before {
+  position: absolute;
+  content: "";
+  height: 50px;
+  right: 10px;
+  top: 3px;
+  border-left: 6px solid var(--highlight-color);
+  animation: flashing ease-in-out 1s infinite;
+}
+
+.subtitle-item {
+  height: 100%;
+  padding: 0 10px;
+  border-radius: 5px;
+  color: var(--secondary-text);
+  display: none;
+}
+
+.subtitle-item.visible {
+  display: flex;
+  align-items: center;
+}
+
+.highlight {
+  padding: 0 10px;
+  margin: 0 10px;
+  background-color: var(--highlight-color);
+  border-radius: 5px;
+}
+
+.plate-title {
+  padding: 0 20px 0 10px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.plate-subtitle {
+  padding: 5px 10px;
+  margin-left: -10px;
+  background-color: var(--success-color);
+  border-radius: 5px;
+}
+
+.plate-subtitle:not(:last-child) {
+  margin-right: 10px;
+}
+
+.plate-subtitle.error {
+  background-color: var(--error-color);
+}
+
+@keyframes blind {
+  0% {
+    width: 0;
+  }
+  5% {
+    width: 100%;
+  }
+  90% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes flashing {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.camera {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 1453px;
+  top: 0;
+  width: 427px;
+  height: 56px;
+  padding: 0 20px;
+  transform: skew(-10deg);
+}
+
+.camera-widget {
+  font-size: 24px;
+  color: var(--primary-text-color);
+}
+
+.widget-title {
+  padding: 0 10px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.widget-subtitle {
+  padding: 5px 10px;
+  margin-left: -10px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+
+.fundraising,
+.donors {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 1920px;
+  top: 562px;
+  width: 467px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  background-color: var(--primary-color);
+  animation: shift-right ease-in-out 60s infinite;
+}
+
+.donors {
+  top: 618px;
+  animation-delay: 6s;
+}
+
+.chat {
+  position: absolute;
+  left: 1453px;
+  top: 674px;
+  width: 467px;
+  height: 406px;
+  background-color: var(--secondary-color);
+}
+
+@keyframes shift-right {
+  0% {
+    left: 1920px;
+  }
+  44% {
+    left: 1920px;
+  }
+  45% {
+    left: 1453px;
+  }
+  55% {
+    left: 1453px;
+  }
+  57% {
+    left: 1920px;
+  }
+  100% {
+    left: 1920px;
+  }
+}

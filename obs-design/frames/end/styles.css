@@ -1,0 +1,104 @@
+html {
+  font-family: 'Play', serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+}
+
+body {
+  height: 1080px;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 320px;
+  animation: flashing 5s ease-in-out infinite;
+}
+
+.soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1180px;
+  height: 120px;
+  margin: 0;
+  font-size: 64px;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  background-color: rgb(32, 32, 32);
+}
+
+.loader {
+  position: relative;
+  margin-top: 40px;
+  width: 1180px;
+  height: 120px;
+  background: linear-gradient(
+    to right,
+    rgb(68, 68, 68) 0,
+    rgb(68, 68, 68) 20px,
+    transparent 20px,
+    transparent 40px
+  );
+  background-size: 40px 100px; /* Цикл полного узора: 120px */
+  background-repeat: repeat;
+  overflow: hidden;
+}
+
+.loader::before {
+  position: absolute;
+  content: '';
+  left: -360px;
+  top: 10px;
+  width: 480px;
+  height: 100px;
+  background: linear-gradient(
+    to right,
+    red 0,
+    red 20px,
+    transparent 20px,
+    transparent 40px
+  );
+  background-size: 40px 100px; /* Цикл полного узора: 120px */
+  background-repeat: repeat;
+  opacity: 0.75;
+  animation: loading 2s ease-in-out infinite;
+}
+
+.slider {
+  font-size: 72px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+}
+
+@keyframes flashing {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}

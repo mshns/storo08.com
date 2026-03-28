@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>twister boost run €15/€25</title>
+  </head>
+
+  <body>
+    <div class="frame">
+      <header>
+        <h1 class="title">TWISTER BOOST RUN €10K</h1>
+        <div class="subtitle">
+          <div class="subtitle-list">
+            <div class="subtitle-item">
+              Twister <span class="highlight">Boost €15/€25</span> на RedStar
+              Poker
+            </div>
+
+            <div class="subtitle-item">
+              <span class="plate-title">День</span>
+              <span class="plate-subtitle" id="day">data.day</span>
+              <span class="plate-title">Профит</span>
+              <span class="plate-subtitle" id="profit">data.profit</span>
+              <div class="progress">
+                <div class="progress-bar" id="progress-bar"></div>
+                <span id="progress">js</span>
+              </div>
+              <span class="plate-title">Цель</span>
+              <span class="plate-subtitle">€10K</span>
+            </div>
+
+            <div class="subtitle-item">
+              Прошлый стрим
+              <span class="plate-title" style="margin-left: 10px"
+                >Профит + рейкбек</span
+              >
+              <span class="plate-subtitle" id="last-day-profit"
+                >data.lastDayProfit</span
+              >
+            </div>
+
+            <div class="subtitle-item">
+              Лучший день
+              <span class="plate-title" style="margin-left: 10px" id="best-day"
+                >XX</span
+              >
+              <span class="plate-subtitle" id="best-day-profit">+€999</span>
+              Худший день
+              <span class="plate-title" style="margin-left: 10px" id="worst-day"
+                >XX</span
+              >
+              <span class="plate-subtitle error" id="worst-day-profit"
+                >-€999</span
+              >
+            </div>
+
+            <div class="subtitle-item">
+              Рейкбек до 60% на RedStar
+              <span class="highlight">t.me/storo08</span>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div class="camera">
+      <div class="camera-widget">
+        <span class="widget-title">LIVE</span>
+        <span class="widget-subtitle"
+          >&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+        >
+      </div>
+      <div class="camera-widget">
+        <span class="widget-title">storo08</span>
+      </div>
+    </div>
+
+    <div class="fundraising">Сбор на поддержку канала</div>
+    <div class="donors">Спасибо за донаты</div>
+
+    <div class="chat"></div>
+
+    <script src="scripts.js" type="module"></script>
+  </body>
+</html>
