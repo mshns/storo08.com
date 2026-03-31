@@ -1,0 +1,42 @@
+{
+  "benefit1": {
+    "title": "T€ 6'000 per month",
+    "subtitle": "Prize fund",
+    "description": "<strong>storo08 Twister Races</strong> is a weekly <strong>private race</strong> for Twister Poker players registered on <promo>RedStar</promo> with promocode:\u00A0storo08.",
+    "button": "Join the race"
+  },
+  "benefit2": {
+    "title": "65 prize awards",
+    "subtitle": "Prize zone",
+    "description": "The prize money of each week is distributed among the participants who managed to enter the <strong>TOP 65</strong> of the best.",
+    "button": "Reward Tickets"
+  },
+  "benefit3": {
+    "title": "Bonus Tickets",
+    "subtitle": "Permanent bonus",
+    "description": "Participants who reach 50K points in a week will receive an <strong>additional €50 Twister ticket</strong>, 100K points will earn <strong>two €50 Twister tickets</strong>."
+  },
+
+  "challenges": {
+    "title": "Special Promo",
+    "description": "Players registered on <promo>RedStar</promo> with promocode store08 can <strong>special promotions</strong> in addition to the private race.",
+    "button": "Participate in promo",
+    "link": "https://t.me/storo08"
+  },
+
+  "challenge1": {
+    "title": "Twister Challenge",
+    "subtitle": "Weekly Challenges",
+    "description": "Challenges for €1 and €2 low stakes Twisters on <promo>RedStar</promo> are a great <strong>opportunity to get from 3 to 10 limit tickets</strong> for active play during the week. "
+  },
+  "challenge2": {
+    "title": "Heads-Up Challenge",
+    "subtitle": "Bounty Freerolls",
+    "description": "Every Friday <promo>RedStar</promo> hosts freerolls where <strong>twister and bounty tickets</strong> are awarded for knocking out storo08."
+  },
+  "challenge3": {
+    "title": "storo08 Race Chase",
+    "subtitle": "Monthly Rakeback",
+    "description": "A private promotion allows active <promo>RedStar</promo> players to receive an <strong>additional rakeback of 5%</strong> monthly!"
+  }
+}

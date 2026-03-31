@@ -1,0 +1,32 @@
+{
+  "Current leaderboard": "Лидерборд текущей гонки",
+  "Previous results": "Результаты прошедшей гонки",
+
+  "Race start": "Старт гонки",
+  "Start": "Старт",
+  "Race finish": "Финиш гонки",
+  "Finish": "Финиш",
+  "Updated": "Обновлено",
+  "at": "в",
+
+  "Private race": "Приватная гонка",
+  "Network race": "Сетевая гонка",
+  "Update": "Обновить",
+
+  "Rows per page": "Строк на странице",
+  "Displaying places": "Показаны места с",
+  "to": "по",
+  "of": "из",
+  "All": "Все",
+
+  "Bonus": "Бонус",
+  "for 50K points": "за 50K очков",
+  "for 100K points": "за 100K очков",
+
+  "Place": "Место",
+  "Player": "Игрок",
+  "Prize": "Приз",
+  "Points": "Очки",
+
+  "Loading. Please wait.": "Загрузка. Пожалуйста, подождите."
+}

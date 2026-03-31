@@ -1,0 +1,21 @@
+{
+  "Race registration": "Race registration",
+
+  "registration": {
+    "part1": "To participate in the private storo08 Twister Races, you must register on RedStar with promo code: storo08.",
+    "part2": "After registering, you must provide your username and nickname in the race topic on the <vigorish>Vigorish.ru</vigorish> forum, or by writing to me on <telegram>Telegram</telegram>.",
+    "part3": "After reviewing your entry, you are automatically included in the private race leaderboard. There is no need to re-apply for this race."
+  },
+
+  "Register for redstar": "Register for RedStar",
+
+  "Race rules": "Race rules",
+
+  "rules": {
+    "part1": "The storo08 Twister Races Private Race runs in parallel with the iPoker Online Race every week from Monday 00:00 GMT to Sunday 23:59 GMT.",
+    "part2": "To participate in races in the Leaderboards tab of the RedStar client <strong>you must confirm your participation</strong>.",
+    "part3": "Players who haven't scored in a month will be disconnected from the leaderboard and will need to re-verify. Players who score will be automatically rolled over to the next month.",
+    "part4": "Prizes and bonuses are credited to the account every Monday.",
+    "part5": "<strong>You can't change your nickname during the race</strong>. If you change your nickname, to continue participating in a private race, you must report it in the race topic on the <vigorish>Vigorish.ru</vigorish> forum, or by writing to me on <telegram>Telegram</telegram>."
+  }
+}

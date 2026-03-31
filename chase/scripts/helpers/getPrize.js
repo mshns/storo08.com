@@ -1,0 +1,13 @@
+const getPrize = (rake) => {
+  if (rake < 1000) return 0;
+  if (rake < 1500) return 50;
+  if (rake < 2000) return 75;
+  if (rake < 3000) return 100;
+  if (rake < 4000) return 150;
+  if (rake < 5000) return 200;
+  if (rake < 6000) return 250;
+  if (rake < 7500) return 300;
+  return Math.floor(rake / 1500) * 75;
+};
+
+export default getPrize;

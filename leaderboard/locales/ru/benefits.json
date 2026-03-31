@@ -1,0 +1,42 @@
+{
+  "benefit1": {
+    "title": "T€ 6'000 в месяц",
+    "subtitle": "Призовой фонд лидерборда",
+    "description": "<strong>storo08 Leaderboard</strong> – это ежемесячная <strong>приватная гонка</strong> для игроков, зарегистрированных на <promo>RedStar</promo> с промокодом:\u00A0storo08.",
+    "button": "Участвовать в лидерборде"
+  },
+  "benefit2": {
+    "title": "100 призовых мест",
+    "subtitle": "Призовая зона",
+    "description": "Призовые каждого месяца распределяются среди участников, которые смогли войти в <strong>TOP 100</strong> лидерборда.",
+    "button": "Распределение призов"
+  },
+  "benefit3": {
+    "title": "Бонусные билеты",
+    "subtitle": "Постоянная акция",
+    "description": "За каждые набранные 10М баллов игрок получает дополнительный бонусный <strong>билет номиналом €100</strong>."
+  },
+
+  "challenges": {
+    "title": "Специальные акции",
+    "description": "Игроки, зарегистрированные на <promo>RedStar</promo> с промокодом storo08, помимо приватного лидерборда могут <strong>участвовать в специальных акциях</strong>.",
+    "button": "Участвовать в акциях",
+    "link": "https://t.me/storo08"
+  },
+
+  "challenge1": {
+    "title": "Twister Challenge",
+    "subtitle": "Ежеденельные челленджи",
+    "description": "Челленджи для игроков низких лимитов €1, €2 и €3 твистеров на <promo>RedStar</promo> - это отличная <strong>возможность получить от 3 до 9 билетов</strong> лимита за активную игру в течение недели."
+  },
+  "challenge2": {
+    "title": "Heads-Up Challenge",
+    "subtitle": "Фрироллы с баунти",
+    "description": "Каждую пятницу на <promo>RedStar</promo> проходят фрироллы, в которых <strong>разыгрываются турнирные деньги, рандомные призы и баунти</strong> за выбивание storo08."
+  },
+  "challenge3": {
+    "title": "storo08 Race Chase",
+    "subtitle": "Ежемесячный Рейкбек",
+    "description": "Приватная акция позволяет активным игрокам <promo>RedStar</promo> ежемесячно получать <strong>дополнительный рейкбек 5%</strong>!"
+  }
+}
