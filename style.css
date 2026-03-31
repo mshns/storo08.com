@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    'Play',
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    sans-serif;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('assets/img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.desktop-layout {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.content-area {
+  flex: 1.5;
+}
+
+.image-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-image {
+  display: none;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+h1 span {
+  color: #f9591e;
+}
+
+.tagline {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.redstar-button {
+  display: inline-block;
+  background-color: #f9591e;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+  margin-left: 0.3rem;
+}
+
+.redstar-button:hover {
+  background-color: #d64510;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.5);
+}
+
+.bio {
+  background: none;
+  padding: 0;
+  margin-bottom: 2rem;
+  border-left: 4px solid #f9591e;
+  padding-left: 1.5rem;
+}
+
+.bio h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.bio p {
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+  max-width: 280px;
+  text-align: center;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #f9591e;
+  letter-spacing: 0.5px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column li {
+  margin-bottom: 0.7rem;
+}
+
+.footer-column a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition:
+    color 0.2s,
+    transform 0.1s;
+  display: inline-block;
+}
+
+.footer-column a:hover {
+  color: #f9591e;
+  transform: translateX(3px);
+}
+
+@media (max-width: 1080px) {
+  .desktop-layout {
+    display: block;
+  }
+
+  .image-area {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    margin: 1.5rem 0;
+  }
+
+  .hero-image {
+    max-width: 400px;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .bio {
+    border-left: none;
+    border-top: 4px solid #f9591e;
+    padding-left: 0;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .bio h2 {
+    font-size: 1.5rem;
+  }
+
+  .bio p {
+    font-size: 1rem;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .subtagline {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    max-width: 350px;
+  }
+
+  .footer-links {
+    gap: 1.5rem;
+  }
+
+  .footer-column {
+    min-width: 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer-column {
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .footer-column a:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .subtagline {
+    font-size: 0.9rem;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .bio p {
+    font-size: 0.95rem;
+  }
+
+  .footer-column h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-column a {
+    font-size: 0.9rem;
+  }
+}
