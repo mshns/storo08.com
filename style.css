@@ -89,7 +89,20 @@ h1 span {
   padding: 0.4rem 1rem;
   border-radius: 0.5rem;
   transition: background-color 0.2s ease;
-  margin-left: 0.3rem;
+  margin-left: 0.5rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(249, 89, 30, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(249, 89, 30, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(249, 89, 30, 0);
+  }
 }
 
 .redstar-button:hover {
