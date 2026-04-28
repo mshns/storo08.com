@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/hu-challenge/style.css" />
+    <title>storo08 Heads-Up Challenge на Redstar</title>
+  </head>
+  <body>
+    <div class="fixed-container">
+      <h1>Фриролл storo08 Heads-Up Challenge на Redstar Poker</h1>
+
+      <div class="layout">
+        <div class="control-panel">
+          <button id="selectWinners">Выбрать победителей</button>
+          <div class="winners-box">
+            <h2>Победители:</h2>
+            <ol id="winnersList"></ol>
+          </div>
+        </div>
+
+        <div class="participants-section">
+          <h2>Участники розыгрыша (<span id="participantsCount">0</span>):</h2>
+          <div id="participantsList" class="participants-grid"></div>
+        </div>
+      </div>
+
+      <div id="loading">Загрузка данных...</div>
+      <div id="error"></div>
+    </div>
+    <script src="/hu-challenge/script.js"></script>
+  </body>
+</html>
