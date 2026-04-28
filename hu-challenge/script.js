@@ -23,8 +23,10 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     const data = await response.json();
 
-    // Данные уже отфильтрованы и отсортированы на сервере
-    currentParticipants = data;
+    // Исключаем организаторов на фронте
+    const excludedPlayers = ["sanchess08", "FreeNavalny"];
+    
+    currentParticipants = data.filter(username => !excludedPlayers.includes(username));
 
     participantsCount.textContent = currentParticipants.length;
 
@@ -50,12 +52,10 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   // Анимация нажатия кнопки
   function simulateButtonClick() {
-    // Анимация кнопки
     selectWinnersBtn.classList.add("click-animation");
 
     setTimeout(() => {
       selectWinnersBtn.classList.remove("click-animation");
-      // Имитируем клик
       selectWinners();
     }, 500);
   }
@@ -68,16 +68,13 @@ document.addEventListener("DOMContentLoaded", async function () {
       }
 
       selectWinnersBtn.disabled = true;
-      selectWinnersBtn.classList.add("selected"); // Делаем кнопку зеленой
+      selectWinnersBtn.classList.add("selected");
       winnersList.innerHTML = "";
 
-      // Выбираем 3 случайных победителя
       const winners = selectRandomWinners(currentParticipants, 3);
       const cards = document.querySelectorAll(".participant-card");
 
-      // Основной цикл выбора победителей
       for (let i = 0; i < winners.length; i++) {
-        // 1. Делаем все ячейки полупрозрачными
         cards.forEach((card) => {
           card.classList.add("semi-transparent");
         });
@@ -90,33 +87,27 @@ document.addEventListener("DOMContentLoaded", async function () {
         );
 
         if (winnerCard) {
-          // 2. Возвращаем нормальную прозрачность всем перед выбором
           cards.forEach((card) => {
             card.classList.remove("semi-transparent");
           });
 
           await new Promise((resolve) => setTimeout(resolve, 300));
 
-          // 3. Подсвечиваем текущего победителя
           winnerCard.classList.add("winner");
 
-          // 4. Добавляем в список победителей сразу
           const li = document.createElement("li");
           li.textContent = winnerUsername;
           winnersList.appendChild(li);
 
-          // Прокручиваем к победителю
           winnerCard.scrollIntoView({
             behavior: "smooth",
             block: "center",
           });
 
-          // 5. Ждем перед следующим выбором
           await new Promise((resolve) => setTimeout(resolve, 1000));
         }
       }
 
-      // 6. В конце возвращаем нормальную прозрачность
       cards.forEach((card) => {
         card.classList.remove("semi-transparent");
       });
