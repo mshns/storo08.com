@@ -1,15 +1,14 @@
-import { data } from "../run/data.js";
+import { data } from '../run/data.js';
 
-const sliderElement = document.querySelector(".slider");
-const soonElement = document.querySelector(".soon");
+const sliderElement = document.querySelector('.slider');
+const soonElement = document.querySelector('.soon');
 const urls = [
-  "storo08.ru",
-  "t.me/storo08",
-  "vk.com/storo08",
-  "youtube.com/storo08stream",
-  "twitch.tv/storo08",
-  "trovo.live/storo08",
-  "kick.com/storo08",
+  'storo08.com',
+  't.me/storo08',
+  'vk.com/storo08',
+  'youtube.com/storo08stream',
+  'twitch.tv/storo08',
+  'kick.com/storo08',
 ];
 
 let index = 0;
@@ -17,7 +16,7 @@ let typingSpeed = 100; // Скорость печатания (мс)
 
 function typeText(element, text, callback) {
   let i = 0;
-  element.textContent = "";
+  element.textContent = '';
 
   function type() {
     if (i < text.length) {
@@ -41,7 +40,7 @@ function changeText() {
 }
 
 function typeSoonText() {
-  const text = "Стрим " + data.nextDay + " дня скоро начнётся";
+  const text = 'Стрим ' + data.nextDay + ' дня скоро начнётся';
   typeText(soonElement, text, () => {
     setTimeout(typeSoonText, 5000); // Пауза перед повтором
   });
